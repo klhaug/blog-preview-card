@@ -44,6 +44,7 @@ h1, h2, h3, p {
     line-height: 150%;
     margin: 0;
     font-weight: 800;
+    font-style: normal;
     letter-spacing: 0px;
     color: var(--color-gray-950);
 }
@@ -51,10 +52,12 @@ h1, h2, h3, p {
 body {
     font-family: Figtree;
     background-color: var(--color-yellow);
+    max-width: 1440px;
+    margin: auto;
 }
 
 .bg-yellow {
-    display: flex;
+display: flex;
 padding: var(--spacing-50, 4px) var(--spacing-150, 12px);
 justify-content: center;
 align-items: center;
@@ -65,33 +68,32 @@ background: var(--color-yellow, #F4D04E);
 }
 
 main {
-    max-width: 1440px;
-    margin: auto;
+
 }
+
 
 .card {
     display: flex;
-    max-width: 384px;
+    max-height: fit-content;
+    max-width: 336px;
     padding: var(--spacing-300, 24px);
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-300, 24px);
-    flex-shrink: 0;
     border-radius: 20px;
     border: 1px solid var(--color-gray-950, #111);
     background: var(--color-white, #FFF);
     box-shadow: 8px 8px 0px 0px #000;
 }
 
-img {
-    width: 100%;
+.blog-img {
     border-radius: 10px;
 }
 
 .author-container {
     display: flex;
-align-items: center;
-gap: var(--spacing-150, 12px);
+    align-items: center;
+    gap: var(--spacing-150, 12px);
 }
 
 .author-img-container {
@@ -101,14 +103,25 @@ gap: var(--spacing-150, 12px);
 }
 
 .txt-container {
+    max-width: 336px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-150, 12px);
-    align-self: stretch;
+    text-wrap: wrap;
     }
 
+.author-img {
+    width: 100%;
+}
+
 footer {
-    max-width: 1440px;
-    margin: auto;
+    color: var(--color-yellow);
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-yellow)
 }
