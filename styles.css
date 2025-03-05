@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --color-yellow: #F4D04E;
+    --color-gray-950: #111111;
+    --color-gray-500: #6B6B6B;
+    --color-white: #ffffff;
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.txt-1 {
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: var(--color-gray-950);
+}
+.txt-2 {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0px;
+    color: var(--color-gray-950);
+}
+.txt-3 {
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: var(--color-gray-950);
+}
+.txt-4 {
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 0px;
+    color: var(--color-gray-950);
+}
+
+body {
+    font-family: Figtree;
+    background-color: var(--color-yellow);
+}
+
+.bg-yellow {
+    display: flex;
+padding: var(--spacing-50, 4px) var(--spacing-150, 12px);
+justify-content: center;
+align-items: center;
+gap: var(--spacing-100, 8px);
+border-radius: 4px;
+background: var(--color-yellow, #F4D04E);
+
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    max-width: 384px;
+    padding: var(--spacing-300, 24px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-300, 24px);
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--color-gray-950, #111);
+    background: var(--color-white, #FFF);
+    box-shadow: 8px 8px 0px 0px #000;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.author-container {
+    display: flex;
+align-items: center;
+gap: var(--spacing-150, 12px);
+}
+
+.author-img-container {
+    border-radius: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-150, 12px);
+    align-self: stretch;
+    }
+
+footer {
+    max-width: 1440px;
+    margin: auto;
+}
