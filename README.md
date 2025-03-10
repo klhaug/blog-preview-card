@@ -8,5 +8,6 @@ Need to work a bit more on understanding the hierarchy of priorities when it com
 
 Had to take a look at object-fit as well to make the image scaling responsive, keeping the same height but shrinking the width. 
 
+AND use box-shadow as border instead of the actual border to bypass the extra 1px that the border adds. 
 
 ![](./screenshot.png)
