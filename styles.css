@@ -92,9 +92,11 @@ main {
     align-items: flex-start;
     gap: var(--spacing-300, 24px);
     border-radius: 20px;
-    border: 1px solid var(--color-gray-950, #111);
+    border: 0px;
+    /* border: 1px solid var(--color-gray-950, #111); */
     background: var(--color-white, #FFF);
-    box-shadow: 8px 8px 0px 0px #000;
+    box-shadow: inset 0 0 0 1px var(--color-gray-950), 8px 8px 0px 0px #000
+    /* box-shadow: 8px 8px 0px 0px #000; */
 }
 
 
@@ -103,8 +105,8 @@ main {
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
-  overflow: hidden;
-  height: 200px;
+    overflow: hidden;
+    height: 200px;
 }
 
 .author-container {
@@ -113,11 +115,7 @@ main {
     gap: var(--spacing-150, 12px);
 }
 
-.author-img-container {
-    border-radius: 32px;
-    width: 32px;
-    height: 32px;
-}
+
 
 .txt-container {
     display: flex;
@@ -128,6 +126,10 @@ main {
 
 .author-img {
     width: 100%;
+    width: 32px;
+    height: 32px;
+    object-fit: fill;
+    border-radius: 32px;
 }
 
 footer {
